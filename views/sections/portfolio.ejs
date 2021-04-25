@@ -1,0 +1,42 @@
+<!-- Portfolio -->
+<div id="portfolio">
+  <h1 data-aos="fade-left" data-aos-duration="1000" class="about__heading">
+    Projects
+  </h1>
+  <hr
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    class="about__heading__underline"
+  />
+  <!-- projects-container -->
+  <div class="projects_container">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      class="projects_container__project"
+    >
+      <div class="project__side project__side--front">
+        <div class="project__picture project__picture--5">&nbsp;</div>
+        <h4 class="project__heading">
+          <span class="project__heading-span project__heading-span--5"
+            >E-Book On C</span
+          >
+        </h4>
+        <div class="project__details">
+          <p class="project__details--heading">Technologies Used:-</p>
+          <ul>
+            <li>File I/O in C</li>
+            <li>Control Flow in C</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project__side project__side--back project__side--back--5">
+        <button data-modal-target="#modal5" class="modal-button">
+          Learn More!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <%- include('../includes/modal-content.ejs') %>
+</div>

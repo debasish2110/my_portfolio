@@ -1,0 +1,208 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 400ms ease-in-out;
+  color: black;
+  border: 2px solid rgb(117, 117, 117);
+  z-index: 1000;
+  background-color: white;
+  width: 675px;
+  max-width: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-button {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+  background: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.visit-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #e31b6d;
+}
+
+.close-button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: grey;
+}
+
+.modal-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(1, 1, 1, 0.2);
+}
+
+.modal-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.modal-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(1, 1, 1, 0.2);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-header {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 30px;
+}
+
+.modal-header__title {
+  font-size: 30px;
+  padding-top: 15px;
+  color: #313131;
+}
+
+.modal-header__tag {
+  color: #aaa9a9;
+  font-size: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 0.1px solid rgb(204, 203, 203);
+}
+
+.modal-header__details {
+  font-size: 15px;
+  font-weight: unset;
+  padding: 15px 30px;
+}
+
+/* SLideShow */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2px;
+  width: auto;
+  padding: 7px 17px;
+  background-color: rgb(153, 152, 152);
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 15px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.mySlides {
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, #a1a1a1, #464646);
+  line-height: 0;
+  border-bottom: 2px solid black;
+}
+
+.mySlides > img {
+  width: 85%;
+  height: 350px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 830px) {
+  .modal {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mySlides > img {
+    height: 250px;
+  }
+  .visit-button {
+    font-size: smaller;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .visit-button {
+    padding: 5px;
+  }
+}

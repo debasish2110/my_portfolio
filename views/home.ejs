@@ -1,0 +1,19 @@
+<%- include('includes/header.ejs') %>
+
+<%- include('sections/main.ejs') %>
+
+<%- include('sections/navbar.ejs') %>
+
+<%- include('sections/about.ejs') %>
+
+<%- include('sections/portfolio.ejs') %>
+
+<%- include('sections/contact.ejs') %>
+
+<%- include('includes/footer.ejs') %>
+
+<script>
+  <% if (success_or_failure) { %>
+  alert("<%= success_or_failure %>");
+<% } %>
+</script>

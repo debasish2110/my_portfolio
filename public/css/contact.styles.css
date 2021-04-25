@@ -1,0 +1,162 @@
+#contact {
+  background-color: rgb(52, 52, 63);
+  overflow-x: hidden;
+  position: relative;
+  top: -15vh;
+  min-width: 300px;
+  padding-top: 75px;
+  text-align: center;
+  margin-bottom: -100px;
+  clip-path: polygon(0 0, 50% 15vh, 100% 0, 100% 100%, 0 100%);
+}
+
+#form {
+  width: 33.33vw;
+  margin: 50px auto;
+}
+
+.input {
+  width: 100%;
+  height: 2rem;
+  background-color: #1e242c;
+  outline: none;
+  border: none;
+  color: white;
+  margin: 3px auto;
+  font-size: large;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  background-color: #1e242c;
+  outline: none;
+  font-size: large;
+  border: none;
+  color: white;
+  margin: 3px auto;
+  padding: 5px;
+}
+
+.submit-btn {
+  padding: 5px 10px;
+  font-size: large;
+  background-color: #1e242c;
+  outline: none;
+  color: white;
+  border: 2px solid white;
+  width: 25%;
+  float: right;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contact__footer {
+  clear: right;
+  margin-top: 125px;
+  padding-bottom: 50px;
+  background-color: #1e242c;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+  padding: 25px;
+  margin: auto;
+}
+
+.footer-icon-container {
+  text-decoration: none;
+  color: white;
+  background-color: #303842;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.footer-icon-container:hover {
+  cursor: pointer;
+}
+
+#linkedin:hover {
+  background-color: #2867b2;
+  color: white;
+}
+
+#instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#facebook:hover {
+  background-color: #4267b2;
+  color: white;
+}
+
+#github:hover {
+  background-color: rgb(150, 150, 150);
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1130px) {
+  #form {
+    width: 50vw;
+  }
+  .footer-icons {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  #contact {
+    position: relative;
+    top: -10vh;
+    clip-path: polygon(0 0, 50% 10vh, 100% 0, 100% 100%, 0 100%);
+  }
+  .footer-icons {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #form {
+    width: 70vw;
+  }
+  .footer-icons {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #form {
+    width: 80vw;
+  }
+  .footer-icons {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #form {
+    width: 90%;
+  }
+  .footer-icons {
+    width: 95%;
+  }
+}

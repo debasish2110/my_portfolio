@@ -1,0 +1,144 @@
+.header {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  height: 100%;
+  background-color: rgb(21, 17, 31);
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.name {
+  font-size: larger;
+  color: rgb(167, 0, 111);
+}
+
+.heading-primary {
+  color: white;
+
+  backface-visibility: hidden;
+  margin-bottom: 30px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 3px;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .heading-primary-main {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .heading-primary-sub {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 7px 15px;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .heading-primary-main {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  .heading-primary-sub {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 4px 10px;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .text-box {
+    width: 100%;
+  }
+  .heading-primary-main {
+    font-size: 20px;
+  }
+  .heading-primary-sub {
+    font-size: 15px;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 2px 5px;
+  }
+}

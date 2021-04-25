@@ -1,0 +1,56 @@
+.navbar-collapse {
+  background-color: rgb(126, 25, 139);
+  height: 50px;
+  font-size: larger;
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  list-style: none;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: rgb(177, 177, 177);
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.active > a {
+  color: white !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 380px) {
+  .navbar-collapse {
+    height: 40px;
+    font-size: large;
+  }
+  .nav-item {
+    padding: 7px 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar-collapse {
+    height: 40px;
+    font-size: medium;
+  }
+  .nav-item {
+    padding: 5px 7px;
+  }
+}

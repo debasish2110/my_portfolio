@@ -1,0 +1,199 @@
+#about {
+  background-color: rgb(226, 226, 226);
+  overflow-x: hidden;
+}
+
+.about__heading {
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+  padding-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+hr.about__heading__underline {
+  background-color: black;
+  width: 75px;
+  margin: auto;
+  border: none;
+  height: 2px;
+}
+
+.about__content {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-around;
+}
+
+.about__content-left {
+  margin-top: 0;
+  width: 400px;
+  color: #616161;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.about__content-left p {
+  width: 500px;
+  transform: translateX(-10%);
+  letter-spacing: 2px;
+  margin-left: auto;
+}
+
+.about__content-left-avatar {
+  width: 300px;
+  height: 300px;
+  background: transparent url('../assets/CYMERA_20190718_184652.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin: 15px auto;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+/* .about__content-left-avatar:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 0;
+  height: 3px;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid rgb(226, 226, 226);
+  border-top: 150px solid rgb(226, 226, 226);
+}
+
+.about__content-left-avatar:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 3px;
+  border-left: 75px solid transparent;
+  border-bottom: 150px solid rgb(226, 226, 226);
+  border-top: 150px solid rgb(226, 226, 226);
+} */
+
+.skills {
+  width: 40vw;
+  margin: 15px 0;
+  padding-right: 10px;
+  display: flex;
+  color: rgb(104, 104, 104);
+  background-color: rgb(207, 207, 207);
+  justify-content: space-between;
+}
+
+.progressBar {
+  background-color: #00a1a7;
+}
+
+.progressBar__tag {
+  padding: 2px;
+  width: 125px;
+  text-align: center;
+  background-color: #04c2c9;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about__content {
+    padding: 70px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .about__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__content-left {
+    margin: auto;
+  }
+  .about__content-right {
+    margin: auto;
+  }
+  .skills {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .about__content-left p {
+    font-size: small;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 10px 55px 10px 20px;
+  }
+  .about__heading {
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .about__content-left-avatar {
+    width: 250px;
+    height: 250px;
+    margin: 25px auto;
+    z-index: 1;
+  }
+
+  .about__content-left-avatar:before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 0;
+    height: 3px;
+    border-right: 55px solid transparent;
+    border-bottom: 125px solid rgb(226, 226, 226);
+    border-top: 125px solid rgb(226, 226, 226);
+  }
+
+  .about__content-left-avatar:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 0;
+    height: 3px;
+    border-left: 55px solid transparent;
+    border-bottom: 125px solid rgb(226, 226, 226);
+    border-top: 125px solid rgb(226, 226, 226);
+  }
+
+  .skills {
+    width: 80vw;
+    margin: 7px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about__content-left p {
+    width: 100vw;
+    padding: 5px 25px;
+  }
+  .about__content-left h2 {
+    padding-right: 50px;
+  }
+  .about__content-left-avatar {
+    margin: 25px 45px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .about__content-left p {
+    margin: 25px 25px;
+  }
+  .about__content-left h2 {
+    padding-right: 100px;
+  }
+  .about__content-left-avatar {
+    margin: 25px 25px;
+  }
+}
